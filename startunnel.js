@@ -47,7 +47,7 @@ class StarTunnel {
         beginShape();
         for (let i = 0; i < this.circleLength; i++) {
             let ind = floor(map(i, 0, this.circleLength, 0, wave.length / 15));
-            let size = map(wave[ind], 0, 1, bass / 1.9, 200); //map index to size/upper bounds of jumps
+            let size = map(wave[ind], 0, 1, bass / 1.9, 220); //map index to size/upper bounds of jumps
             let x = size * sin(i);
             let y = size * cos(i);
             vertex(x, y);
@@ -59,7 +59,7 @@ class StarTunnel {
             beginShape();
             for (let i = 0; i < this.circleLength; i++) {
                 let ind = floor(map(i, 0, this.circleLength, 0, wave.length / 15));
-                let size = map(wave[ind], 0, 1, treble, 200); //map index to size/upper bounds of jumps
+                let size = map(wave[ind], 0, 1, treble, 150); //map index to size/upper bounds of jumps
                 let x = size * -sin(i);
                 let y = size * -cos(i);
                 vertex(x, y);
