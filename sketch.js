@@ -62,11 +62,11 @@ function showStartScreen() {
 	strokeWeight(2);
 	stroke("white");
 	text(`'SPACE' to show menu`, windowWidth / 3, windowHeight / 2 - 240);
-	text(`'1 - 6' to select visual template`, windowWidth / 3, windowHeight / 2 - 200);
-	text(`'ENTER' play/pause current song`, windowWidth / 3, windowHeight / 2 - 160);
-	text(`'←' '→' to change song`, windowWidth / 3, windowHeight / 2 - 120);
-	text(`'↑' '↓' to adjust volume`, windowWidth / 3, windowHeight / 2 - 80);
-	text(`'F' to go in fullscreen`, windowWidth / 3, windowHeight / 2 - 40);
+	text(`'1 - 6' to select a visual`, windowWidth / 3, windowHeight / 2 - 200);
+	text(`'←' '→' to change song`, windowWidth / 3, windowHeight / 2 - 160);
+	text(`'↑' '↓' to adjust volume`, windowWidth / 3, windowHeight / 2 - 120);
+	text(`'F' to toggle fullscreen`, windowWidth / 3, windowHeight / 2 - 80);
+	text(`'ENTER' play/pause current song`, windowWidth / 3, windowHeight / 2 - 40);
 	text(`Press 'ENTER' or click to continue!`, windowWidth / 3, windowHeight / 2 + 100);
 	pop();
 }

@@ -21,8 +21,7 @@ function ControlsAndInput() {
 	//responds to keyboard presses
 	//@param keycode the ascii code of the keypressed
 	this.keyPressed = function (keycode) {
-		//console.log(keycode);
-		if (keycode == 32) {
+		if (keycode == 32 && mode == 1) {
 			this.menuDisplayed = !this.menuDisplayed;
 		}
 		//select visualizer with number keys 1-9
