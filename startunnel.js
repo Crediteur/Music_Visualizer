@@ -43,7 +43,7 @@ class StarTunnel {
 
         noStroke();
         //draw right semicircle, listens to bass
-        fill(highMid / 2, treble / 2, bass, 50);
+        fill(highMid / 2, treble / 2, bass, 130);
         beginShape();
         for (let i = 0; i < this.circleLength; i++) {
             let ind = floor(map(i, 0, this.circleLength, 0, wave.length / 15));
@@ -54,7 +54,7 @@ class StarTunnel {
         }
         endShape(CLOSE);
         //draw left semicircle, listens to treble
-        fill(treble * 2, treble, bass / 2, 50);
+        fill(treble * 2, treble, bass / 2, 130);
         if (treble > 25) {
             beginShape();
             for (let i = 0; i < this.circleLength; i++) {
@@ -67,7 +67,7 @@ class StarTunnel {
             endShape(CLOSE);
         }
         //draw top semicircle, listens to high mid
-        fill(treble, bass / 1.4, highMid * 2, 50);
+        fill(treble, bass / 1.4, highMid * 2, 130);
         if (highMid > 25) {
             beginShape();
             for (let i = 0; i < this.circleLength; i++) {
