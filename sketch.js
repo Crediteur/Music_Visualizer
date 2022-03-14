@@ -16,7 +16,7 @@ var beatDetect;
 //start text screen
 var mode = 0;
 function preload() {
-	sound0 = loadSound('assets/stomper_reggae_bit.mp3');
+	sound0 = loadSound('assets/burning_home.mp3');
 	sound1 = loadSound('assets/nightdrive_vhsdreams.mp3');
 	sound2 = loadSound('assets/multiverse_pbn.mp3');
 	sound3 = loadSound('assets/heartbeat_natalie.mp3');
@@ -34,12 +34,12 @@ function setup() {
 
 	//create a new visualisation container and add visualisations
 	vis = new Visualisations();
-	vis.add(new Spectrum());
-	vis.add(new WavePattern());
-	vis.add(new Needles());
 	vis.add(new StarTunnel());
 	vis.add(new Fireworks());
 	vis.add(new Spinner());
+	vis.add(new Spectrum());
+	vis.add(new WavePattern());
+	vis.add(new Needles());
 }
 
 function draw() {
@@ -73,7 +73,7 @@ function showStartScreen() {
 //song playlist & volume setup
 function soundSetup() {
 	soundLibrary = [sound0, sound1, sound2, sound3, sound4];
-	soundNames = ["Stomper Reggae", "Nightdrive - VHS Dreams", "Multiverse - PBN", "Heartbeat - Natalie", "The Return - Pylot"];
+	soundNames = ["Burning - Home", "Nightdrive - VHS Dreams", "Multiverse - PBN", "Heartbeat - Natalie", "The Return - Pylot"];
 	tracks = soundLibrary.length - 1;
 	for (let i = 0; i < soundLibrary.length; i++) {
 		soundLibrary[i].setVolume(volume);
